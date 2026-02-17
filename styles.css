@@ -81,16 +81,9 @@
    CUSTOM FONT - FIBRE
    ======================================== */
 
-/* 
-To add the Fibre font, you need the font files (.woff, .woff2, .ttf, etc.)
-Place them in a 'fonts' folder and uncomment the following:
-*/
-
-/*
 @font-face {
     font-family: 'Fibre';
-    src: url('fonts/Fibre-Regular.woff2') format('woff2'),
-         url('fonts/Fibre-Regular.woff') format('woff');
+    src: url('fonts/Fibre.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -98,13 +91,11 @@ Place them in a 'fonts' folder and uncomment the following:
 
 @font-face {
     font-family: 'Fibre';
-    src: url('fonts/Fibre-Bold.woff2') format('woff2'),
-         url('fonts/Fibre-Bold.woff') format('woff');
+    src: url('fonts/Fibre.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
-*/
 
 /* ========================================
    RESET & BASE STYLES
@@ -315,16 +306,27 @@ button {
     align-items: center;
     justify-content: center;
     background: linear-gradient(rgba(59, 42, 31, 0.3), rgba(59, 42, 31, 0.3)),
-                url('hero-image.jpg') center/cover no-repeat;
+                url('images/cheetah.jpg') center/cover no-repeat;
     color: var(--color-white);
-    text-align: center;
+    text-align: left;
     padding: var(--section-padding) 0;
     position: relative;
 }
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 0;
+    position: relative;
+}
+
+.hero-paint {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 280px;
+    pointer-events: none;
+    opacity: 0.9;
+    z-index: 0;
 }
 
 .hero-title {
@@ -453,10 +455,10 @@ button {
 
 .why-matters {
     background: linear-gradient(rgba(59, 42, 31, 0.5), rgba(59, 42, 31, 0.5)),
-                url('ecosystem-image.jpg') center/cover no-repeat;
+                url('images/safari.jpg') center/cover no-repeat;
     color: var(--color-white);
     padding: var(--section-padding) 0;
-    text-align: center;
+    text-align: left;
 }
 
 .why-matters-content {
@@ -483,7 +485,8 @@ button {
    ======================================== */
 
 .stats-section {
-    background-color: var(--color-white);
+    background: linear-gradient(rgba(246, 241, 232, 0.88), rgba(246, 241, 232, 0.88)),
+                url('images/safari.jpg') center/cover no-repeat;
     padding: var(--section-padding) 0;
 }
 
