@@ -1,2 +1,2 @@
-# Thanda
-Wildlife Sanctuary webpage
+
+Wildlife Sanctuary UI Design
