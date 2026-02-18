@@ -822,6 +822,16 @@ button {
         gap: var(--spacing-sm);
     }
 
+     /* Add this: */
+    .hero-section {
+        padding-left: 5%;  /* Less space on tablets */
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+    /* ... rest stays the same */
+
     .cards-grid,
     .stats-grid,
     .volunteer-grid,
@@ -847,33 +857,6 @@ button {
     .navbar {
         width: calc(100% - 2rem);
     }
-}
-
-@media (max-width: 768px) {
-    :root {
-        --font-size-hero: 2.5rem;
-        --font-size-h1: 2rem;
-        --font-size-h2: 1.75rem;
-        --section-padding: 3rem;
-    }
-
-    /* Add this: */
-    .hero-section {
-        padding-left: 5%;  /* Less space on tablets */
-    }
-
-    .navbar-toggler {
-        display: block;
-    }
-    /* ... rest stays the same */
-}
-
-@media (max-width: 480px) {
-    :root {
-        --font-size-hero: 2rem;
-        --section-padding: 2rem;
-    }
-
     /* Add this: */
     .hero-section {
         padding-left: var(--container-padding);  /* Minimal space on mobile */
@@ -882,4 +865,16 @@ button {
     .navbar {
         width: calc(100% - 2rem);
     }
+    
+    /* Add these hero adjustments: */
+    .hero-section .container {
+        padding-left: var(--container-padding);  /* Minimal space on mobile */
+    }
+    
+    .hero-content {
+        padding-top: 140px;  /* Fixed value on small screens */
+        max-width: 100%;
 }
+
+
+
