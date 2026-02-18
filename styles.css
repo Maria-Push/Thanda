@@ -336,7 +336,7 @@ button {
 .hero-section .container {
     max-width: none;
     margin: 0;
-    padding-left: 12%; /*of vw width, adjusts to screen size*/
+    padding-left: 5%; /*of vw width, adjusts to screen size*/
 }
 
 .hero-content {
@@ -865,7 +865,7 @@ button {
     .navbar {
         width: calc(100% - 2rem);
     }
-    
+
     /* Add these hero adjustments: */
     .hero-section .container {
         padding-left: var(--container-padding);  /* Minimal space on mobile */
@@ -875,6 +875,6 @@ button {
         padding-top: 140px;  /* Fixed value on small screens */
         max-width: 100%;
 }
-
+}
 
 
